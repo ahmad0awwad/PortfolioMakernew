@@ -1,0 +1,579 @@
+body {
+    background-image: linear-gradient(to right, #c95, #f7ead3, #c95);
+      margin-left: 10%;
+      margin-right: 10%;
+  
+  }
+  
+  
+  .language-buttons {
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 1000; /* Higher number to stay on top of other elements */
+    display: flex;
+    gap: 10px;
+  }
+  .language-button {
+    padding: 10px 20px;
+    margin: 0;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for better visibility */
+  }
+  .language-button:hover {
+    background-color: #ddd;
+  }
+  
+  
+  
+  /* Example styling for the hero image */
+  
+  
+  
+  /* Apply a solid blue background color to the whole page */
+  body {
+    background-color: #87CEEB; /*blue shade like #0000FF for Blue */
+  }
+  
+  .phone-icon {
+    color: #d26600;; 
+    margin-right: 5px; 
+  }
+  /* your-styles.css */
+  
+  .icon {
+    width: 16px; /* Adjust width */
+    height: 16px; /* Adjust height */
+    vertical-align: middle; /* Align icon with text */
+    margin-right: 5px; /* Space between icon and text */
+  }
+  
+  /* Dashed border */
+  hr.dashed {
+      border-top: 3px dashed #bbb;
+    }
+    
+    /* Dotted border */
+    hr.dotted {
+      border-top: 3px dotted #bbb;
+    }
+    
+    /* Solid border */
+    hr.solid {
+      border-top: 3px solid #bbb;
+    }
+    
+    /* Rounded border */
+    hr.rounded {
+      border-top: 8px solid #bbb;
+      border-radius: 5px;
+    }
+    body, html {
+      height: 100%;
+  }* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*  */
+  
+  
+  /* master.css */
+  
+  /* 
+  } */
+  
+  .col {
+    flex: 1 0 0%;
+    /* padding: 0 25px; */
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align cards */
+    gap: 20px; /* Spacing between cards */
+    margin: 20px; /* Add margin around the container */
+  }.card {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 0; /* Sharp edges */
+    overflow: hidden; /* Prevent overflow */
+    height: 400px; /* Set a consistent height */
+  }
+  
+  .card-img {
+    width: 100%; /* Full width */
+    height: 65%; /* Fixed height as 65% of the card */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+  }
+  
+  .card-body {
+    height: 35%; /* Remaining height for text and button */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space between title, text, and button */
+    align-items: center; /* Center-align the content */
+    padding: 10px;
+    background-color: #f5bd8c;; /* Light peach background */
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.2rem; /* Slightly larger title font */
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 0; /* Sharp button edges */
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  img.small-pic {
+    width: 100%; /* Ensure full width in its container */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensure image is cropped properly */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+  }
+  
+  
+  .btn-primary {
+    background-color: #007bff; /* Blue background color */
+    border-color: #007bff; /* Blue border color */
+    border-radius: 5px; /* Rounded button edges */
+    padding: 10px 20px; /* Padding for button */
+    text-decoration: none; /* Remove default underline */
+    color: #fff; /* White text color */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3;
+  }
+  
+  
+  
+  .applet-div {
+    margin-top: 20px; /* Adjust margin as needed */
+    padding: 20px;
+    background-color: #f5bd8c; /* Light gray background */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .section-heading {
+    font-size: 1.5rem; /* Larger font size for section heading */
+    color: #02027b;
+    text-align: center;
+    margin-bottom: 20px; /* Space below heading */
+  }
+  
+  .textfield {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #fff;
+  }
+  
+  .btn-primary:hover, .btn-warning:hover {
+    filter: brightness(85%);
+  }
+  
+  
+  .container {
+      max-width: 1200px; /* Adjust maximum width as needed */
+      margin: 0 auto; /* Center align container horizontally */
+      padding: 0 15px; /* Add padding on the sides */
+      overflow: hidden; /* Clear floats inside the container */
+  }
+  
+  
+  
+  .section-subheading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #555;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center-align text inside */
+  }
+  .section-small-heading {
+    font-size: 1rem;
+    font-style: italic;
+    color: #777;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center-align text inside */
+  }
+  
+  
+  /* Icon styling */
+.icon {
+  width: 32px; /* Slightly larger for better visibility */
+  height: 32px;
+  margin-right: 12px;
+  border-radius: 8px; /* Soft rounded corners */
+  background-color: #f2f2f2; /* Subtle background for contrast */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for a raised effect */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Link styling */
+.Cont {
+  text-decoration: none;
+  color: #0073e6; /* Slightly lighter blue for modern look */
+  font-weight: 600; /* Slightly bolder font */
+  font-size: 16px; /* Adjusted size for readability */
+  display: inline-block; /* Align with icon */
+  transition: color 0.2s, text-decoration 0.2s; /* Smooth hover effect */
+}
+
+.Cont:hover {
+  text-decoration: underline;
+  color: #004a99; /* Darker blue for hover */
+}
+
+/* Social media container */
+.social-media-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px; /* Add spacing between items */
+  padding: 8px; /* Add some padding for a cleaner look */
+  border-radius: 8px; /* Soft rounded edges */
+  background-color: #f5bd8c; /* Subtle background color for grouping */
+  transition: background-color 0.2s; /* Smooth hover effect */
+}
+
+.social-media-item:hover {
+  background-color: #eef7ff; /* Slightly blue background on hover */
+}
+
+  
+  .phone-subheading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #555;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center-align text inside */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .keyword-magnet {
+    display: inline-block;
+    /* background-color: #2c2c2c;; */
+    border-radius: .375pc;
+    padding: 0.2rem 0.4rem;
+    margin: 0.25rem;
+    font-weight: 700;
+    color: #333;
+    border-right-color: #2c2c2c;
+    border-top-color: #2c2c2c;
+    border-left-color: #2c2c2c;
+    border-bottom-color: #2c2c2c;
+    border-top-style: solid;border-bottom-style: solid;border-right-style: solid;border-left-style: solid;
+  }
+  /* Override Bootstrap's list-group-item styles */
+  .custom-list .list-group-item {
+    background-color: transparent !important; /* Make background transparent */
+    border: none !important; /* Remove borders */
+    color: #333; /* Match text color with your page's theme */
+    font-size: 1.5rem; /* Bigger font size */
+    text-align: left; /* Align text to the left */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    padding: 10px 0; /* Add spacing */
+    gap: 10px; /* Add space between star and text */
+    margin-left: 190px;
+    line-height: 0.4;
+  
+  }
+  
+  /* Add star icon using pseudo-element */
+  .custom-list .list-group-item::before {
+    content: "\2605"; /* Unicode for filled star (★) */
+    color: #212529; /* Blue color for the star */
+    font-size: 1rem; /* Larger size for the star icon */
+    margin-right: 0.5rem; /* Space between the icon and text */
+    display: block;
+  }
+  
+  /* Adjust font style for the list */
+  .custom-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0 auto; /* Center the list */
+    max-width: 600px; /* Optional: Limit the width */
+  }
+  
+  
+  .keyword-magnet:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
+    transform: scale(1.1); /* Slight scaling effect */
+  }
+  
+  
+  
+  .list-group-item:hover {
+    background-color: #007bff; /* Blue background on hover */
+  }
+  
+  .tooltip-inner {
+    background-color: #007bff !important; /* Blue background */
+    color: #fff !important; /* White text */
+    font-size: 1rem; /* Adjust font size */
+    border-radius: 5px; /* Optional: Rounded corners */
+    padding: 10px; /* Add padding for better appearance */
+    text-align: center; /* Center-align text */
+  }
+  
+  .tooltip.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #007bff !important; /* Match the tooltip background color */
+  }
+  
+  .tooltip-link {
+    color: #007bff; /* Blue text for the link */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .tooltip-link:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  
+  
+  .himage {
+    text-align: center; /* Centers horizontally */
+    height: 300px; /* Fixed height for the container */
+  margin-top: 40px;
+  }
+  
+  .himage img {
+    vertical-align: middle; /* Aligns the image vertically */
+    max-width: 100%;
+    max-height: 100%;
+    height: 60%;
+    width: 1000px;
+  }
+  .page-title {
+    font-size: 3.5em;
+      font-style: italic; /* Italic style */
+    color: #02027b; /* White text for contrast */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: -100px; /* Remove default margins */
+    text-align: center; /* Center-align text inside */
+    margin-bottom: 0;
+  }
+  
+  .sub {
+    font-size: 0.8rem; /* Small font for subtitle */    font-style: italic; /* Italic style */
+    color: black; /* White text for contrast */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 10px; /* Space below the subtitle */
+    text-transform: uppercase; /* Optional: Make text uppercase */
+    letter-spacing: 1px; /* Optional: Add spacing between letters */
+  }
+  
+  
+  .intro {
+    font-family: Arial, sans-serif; /* Clean and modern font */
+    font-size: 1.2rem; /* Slightly larger font for readability */
+    line-height: 1.6; /* Ample line spacing for clear readability */
+    text-align: center; /* Center-align the text */
+    color: #333; /* Dark gray color for the text */
+    max-width: 800px; /* Limit the width to avoid long lines */
+    margin: 20px auto; /* Center the paragraph and add vertical spacing */
+  }
+  
+  
+  .intro::after {
+    content: ""; /* To prevent extra spacing after the text */
+  }
+  
+  
+  
+  .ma {
+    font-size: 2.5em;
+      font-style: italic; /* Italic style */
+    color: #02027b; /* White text for contrast */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center-align text inside */
+    margin-bottom: 0.5em;
+  }
+
+
+
+/* Keyword Magnet Style */
+.skill-item {
+  display: inline-block;
+  margin: 0.2rem 0.4rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.skill-item:hover {
+  background-color: #0056b3;
+}
+
+/* Tooltip Styling */
+.tooltip-link {
+  position: relative;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.tooltip-link:hover {
+  color: #0056b3;
+}
+
+/* List Styles */
+.custom-list {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-list .list-group-item {
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+/* Responsive Design - Phone First */
+@media (min-width: 576px) {
+  .container {
+      max-width: 540px;
+      margin: 1rem auto;
+  }
+
+  .skill-item {
+      font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+}
+  .hr hr {
+    border: none; /* Remove default border */
+    border-top: 0.5rem dotted #bababa; /* Dotted border */
+    margin: 2rem auto; /* Centered spacing */
+    width: 7%; /* Custom width */
+  }
+  .footer {
+    text-align: center; /* Center the text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #555; /* Subtle text color */
+    padding: 10px 0; /* Add padding for spacing */
+    border-top: 1px solid #ddd; /* Optional: Add a top border */
+  }
+  
+  .footer p {
+    margin: 0; /* Remove default margin */
+  }
+  .Cont{
+  
+    color: #d26600;;
+    text-decoration: none;
+    background-color: transparent;
+  }

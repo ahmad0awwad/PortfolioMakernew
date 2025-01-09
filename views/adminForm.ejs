@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>creating account </title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="/public/stylesheets/form.css"></head>
+
+<body>
+
+    <nav class="navbar">
+       
+        <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
+    </nav>
+
+
+    <div class="admin-container">
+
+        <div class="main">
+
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-desc">
+                        <div class="signup-desc-content">
+                            <a href="#" class="logo">
+                                Portofolio<span class="plus">Maker</span>
+                            </a>
+                            <div class="wrapper">
+                                <picture>
+                                    <!-- Image for smaller screens -->
+                                    <source srcset="public/images/pal.jpg" media="(max-width: 768px)">
+                                    <!-- Default image -->
+                                    <img src="public/images/pal.png" alt="" class="signup-img">
+                                </picture>  
+                        </div>
+
+                    </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="signup-form-conent">
+                        <h1>إنشاء صفحة جديدة</h1>
+                        <form id="adminForm" action="/adminForm" method="POST" enctype="multipart/form-data">
+                            <input type="hidden" name="from" value="<%= from %>">
+           
+                            
+                            <h3></h3>
+
+                       
+<!-- Merged Step: URL and Name -->
+<fieldset class="form-step active">
+    <h3>Step 1</h3>
+    
+    <!-- URL Input Section -->
+    <label for="url">( رابط المشاركة )</label>
+    <div class="url-container">
+        <input type="text" 
+            style="direction: ltr; text-align: left;" 
+            id="url"
+            name="url"
+            class="dynamic-input"
+            placeholder=""
+            title="ضع الاسم الذي تريده ان يظهر في رابط المشاركة"
+            required
+        >
+    </div>
+    <div class="status-container">
+        <span id="urlStatus" class="status-icon"></span>
+        <span id="urlMessage" class="status-message"></span>
+    </div>
+
+    <!-- Name Input Section -->
+    <label for="clientName">الاسم</label>
+    <input type="text" id="clientName" name="name" required oninput="checkDuplicateName()">
+    <span id="name-status"></span>
+    
+        <label for="Bio">bio </label>
+
+        <input type="text" id="Bio" name="Bio" placeholder="  Bio"  >
+  
+    <!-- Navigation Buttons -->
+    <div class="button-container">
+        <button type="button" class="btn btn-primary btn-lg active nextBtn" onclick="nextStep()">التالي</button>
+    </div>
+</fieldset>
+
+
+                            </fieldset>
+
+
+
+
+
+                            <h3></h3>
+
+                            
+                         
+
+                            <!-- Step 2: Slogan -->
+                            <fieldset class="form-step" data-step="4">
+                                <span class="step-current">الخطوة 2 من 9</span>
+                                <h3>Step 2</h3>
+                                <div class="form-group">
+                                <label for="slogan">التخصص </label>
+
+                                <input type="text" id="slogan" name="slogan" placeholder="أدخل التخصص الخاص بك"  >
+                            </div>
+                                <div class="button-container">
+                                    <button type="button" class="prevBtn" onclick="prevStep()">السابق</button>
+                                   
+                                    <button type="button" class="nextBtn" onclick="nextStep()">التالي</button>
+
+                                </div>
+                            </fieldset>
+
+                            <h3></h3>
+
+
+                            <!-- Step 3: Social media -->
+
+                            <fieldset class="form-step" >
+                                <span class="step-current">الخطوة 3 من 9</span>
+                                <h3>Step 3</h3>
+                            
+                                <div class="form-group">
+                                    <label>روابط وسائل التواصل الاجتماعي</label>
+                                    <div id="socialMediaContainer">
+                                        <!-- First row without remove button -->
+                                        <div>
+                                            <select name="socialMedia[0][name]" required>
+                                                <option value="">اختر الوسيلة الاجتماعية</option>
+                                                <option value="Gmail">gmail</option>
+                                                <option value="TikTok"> LinkedIn</option>
+                                                <option value="WhatsApp">whatsapp</option>
+                                                
+                                            </select>
+                                            <input type="text" name="socialMedia[0][url]" placeholder="رابط الوسيلة الاجتماعية" required>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="add-button" onclick="addSocialMedia()">إضافة وسيلة اجتماعية أخرى</button>
+                                    <div class="button-container">
+                                        <button type="button" class="prevBtn" onclick="prevStep()">السابق</button>
+                                        <button type="button" class="nextBtn" onclick="nextStep()">التالي</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                         <!-- Step 4: Projects -->
+                            <h3></h3>
+                            <fieldset class="form-step">
+                                <span class="step-current">الخطوة 4 من 9</span>
+                                <h3>Step 4</h3>
+                                <div class="form-group">
+                                    <label>روابط مشاريع سابقة</label>
+                                    <div id="projectsContainer">
+                                        <!-- First Project Input -->
+                                        <div class="project-item">
+                                            <label for="projectTitle">عنوان المشروع</label>
+                                            <input type="text" name="projects[0][title]" placeholder="أدخل عنوان المشروع" required>
+                                            
+                                            <label for="projectDescription">وصف المشروع</label>
+                                            <textarea name="projects[0][description]" placeholder="أدخل وصف المشروع" required></textarea>
+                                            
+                                            <label for="projectImage">صورة المشروع</label>
+                                            <input type="file"name="projects[0][image]" accept="image/*" required>
+                                            
+                                            <label for="projectLink">رابط المشروع</label>
+                                            <input type="url" name="projects[0][link]" placeholder="أدخل رابط المشروع" required>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="add-button" onclick="addProject()">إضافة مشروع آخر</button>
+                                    <div class="button-container">
+                                        <button type="button" class="prevBtn" onclick="prevStep()">السابق</button>
+                                        <button type="button" class="nextBtn" onclick="nextStep()">التالي</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <h3></h3>
+                          <!-- Step 5: Skills and Education -->
+        <fieldset class="form-step">
+            <span class="step-current">الخطوة 5 من 9</span>
+            <h3>Step 5</h3>
+            <div class="form-group">
+                <label>المهارات</label>
+                <div id="skillsContainer">
+                    <!-- First Skill Input -->
+                    <div class="skill-item">
+                        <input type="text" name="skills[]" placeholder="أدخل المهارة" required>
+                    </div>
+                </div>
+                <button type="button" class="add-button" onclick="addSkill()">إضافة مهارة أخرى</button>
+
+                <label>التعليم</label>
+                <div id="educationContainer">
+                    <!-- First Education Input -->
+                    <div class="education-item">
+                        <input type="text" name="education[0][institution]" placeholder="اسم المؤسسة" required>
+                        <input type="text" name="education[0][degree]" placeholder="الدرجة العلمية" required>
+                    </div>
+                </div>
+                <button type="button" class="add-button" onclick="addEducation()">إضافة سجل تعليمي آخر</button>
+
+                <div class="button-container">
+                    <button type="button" class="prevBtn" onclick="prevStep()">السابق</button>
+                    <button type="submit" class="submit">إنشاء الصفحة</button>
+                    
+                </div>
+            </div>
+        </fieldset>
+
+
+                            <h3></h3>
+
+
+
+
+                        </form>
+                    </div>
+                </div>
+
+
+
+                <script src="vendor/jquery/jquery.min.js"></script>
+                <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+                <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+                <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="public/scripts/form.js"></script>
+
+
+</body>
+
+</html>
