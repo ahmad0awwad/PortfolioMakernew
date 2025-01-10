@@ -28,7 +28,7 @@ mongoose.connect('mongodb://localhost:27017/yourDatabaseName')
         console.error('MongoDB connection error:', err);
     });
 
-   // هذا عشان تخلي الكود يخدم الروت دايركت والسطر الثاني عشان يخدم فايلات فولدر الاستس
+   // هذا عشان اخلي الكود يخدم الروت دايركت والسطر الثاني عشان يخدم فايلات فولدر الاستس
    app.use(express.static(path.join(__dirname))); 
    app.use('/assets', express.static(path.join(__dirname, 'assets')));
    app.use('/public', express.static(path.join(__dirname, 'public')));
@@ -95,9 +95,9 @@ app.use(async (req, res, next) => {
 
 
 const uploadDirectories = [
-    './public/uploads/logos',
-    './public/uploads/gallery',
-    './public/uploads/projects', // Add projects directory
+
+   
+    './public/uploads/projects', 
 ];
 
 uploadDirectories.forEach(dir => {
@@ -162,11 +162,6 @@ app.post('/api/check-duplicate-name', async (req, res) => {
     }
 });
 
-
-
-
-
-
 //Main page
 
 // هذا عشان تخليه يخدم فاليل انديكس (/)
@@ -178,15 +173,6 @@ app.get('/adminForm', (req, res) => {
     const { email = '', password = '', from = '' } = req.query;
     res.render('adminForm', { email, password, from });
 });
-
-
-
-
-
-
-
-
-
 
 
 
@@ -232,9 +218,6 @@ app.get('/check-url/:url', checkUrlLimiter, async (req, res) => {
         });
     }
 });
-
-
-
 
 app.get('/:clientUrl', async (req, res) => {
     try {
@@ -285,26 +268,6 @@ app.get('/check-name/:name', async (req, res) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 app.get('/clients/:id', async (req, res) => {
     try {
         const clientId = req.params.id;
@@ -321,42 +284,6 @@ app.get('/clients/:id', async (req, res) => {
         res.status(500).send('Server error');
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -431,66 +358,6 @@ app.post('/adminForm', upload.any(), async (req, res) => {
         res.status(500).send('Server error: ' + error.message);
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
