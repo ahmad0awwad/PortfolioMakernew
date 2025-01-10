@@ -39,10 +39,9 @@ adding DASHBOURD and SIGN IN /SIGN UP pages
 Getting Started
 
 Installation
-Clone the repository:
-git clone https://github.com/your-username/PortfolioMaker.git
+Clone the repository
 Navigate to the project directory:
-cd PortfolioMaker
+cd PortfolioMakernew
 Install dependencies:
 npm install
 Start the server:
